@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Responsive Sidebar</title>
+  <link rel="stylesheet" href="vendor/css/styles.css">
+  <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+</head>
+
+<body>
+
+  <nav id="sidebar">
+    <ul>
+
+      <li>
+        <span class="logo">CoDec</span>
+        <button onclick=toggleSidebar() id="toggle-btn">
+          <i class="fas fa-chevron-left alt logo-icon"></i>
+        </button>
+      </li>
+
+      <li class="active">
+        <a href="#!">
+          <i class="fas fa-home alt link-icon"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fas fa-dashboard alt link-icon"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!">
+          <i class="fas fa-calendar alt link-icon"></i>
+          <span>Calendar</span>
+        </a>
+      </li>
+
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <i class="fas fa-add alt link-icon"></i>
+          <span>Create</span>
+          <i class="fas fa-chevron-down alt link-icon rt"></i>
+        </button>
+
+        <ul class="sub-menu">
+          <div>
+            <li>
+              <a href="#!">Folder</a>
+              <a href="#!">Project</a>
+              <a href="#!">Document</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <i class="fas fa-list alt link-icon"></i>
+          <span>Todo-List</span>
+          <i class="fas fa-chevron-down alt link-icon rt"></i>
+        </button>
+
+        <ul class="sub-menu">
+          <div>
+            <li>
+              <a href="#!">Work</a>
+              <a href="#!">Coding</a>
+              <a href="#!">School</a>
+              <a href="#!">Workout</a>
+              <a href="#!">Private</a>
+              <a href="#!">Gardening</a>
+            </li>
+          </div>
+        </ul>
+      </li>
+
+
+
+      <li>
+        <a href="#!">
+          <i class="fas fa-cogs alt link-icon"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Hello</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, distinctio.
+    </p>
+
+    <div class="container">
+      <h2>Example</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde debitis autem fuga expedita, suscipit voluptatem
+        soluta atque sunt maiores facilis earum? Dignissimos sequi nam sunt voluptatibus nemo eum magni dolor illo nobis
+        porro, explicabo quae? Minima nulla cum adipisci dolores natus a blanditiis iusto, corporis quasi excepturi
+        facere officiis culpa aliquid mollitia tenetur velit asperiores nihil quas deleniti magni hic. Commodi cumque
+        ullam exercitationem tempora, vero molestiae ratione sequi eveniet corporis autem temporibus repudiandae neque
+        nostrum magni enim. Illum nobis dolores reiciendis, facere doloremque cupiditate itaque minima perspiciatis
+        placeat? A adipisci voluptatum ipsam delectus cum odio nobis. Eligendi ea asperiores commodi suscipit aspernatur
+        beatae ducimus enim quas atque, delectus nostrum eveniet tenetur cupiditate odio eos est eaque, iusto
+        accusantium vero?
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>Lorem Ipsum</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque veritatis quae deserunt quidem deleniti,
+        voluptates quibusdam similique mollitia culpa temporibus, alias nulla harum adipisci dolores cumque rerum soluta
+        eius nesciunt officiis corporis. Magnam magni eveniet neque dignissimos natus hic at temporibus fugiat. Pariatur
+        iste, rem ab aut similique deleniti sunt sapiente fugiat nostrum est numquam provident odio quas quasi quia sit
+        recusandae incidunt iure mollitia dolore. Pariatur, impedit. Eum repellendus sint doloribus culpa pariatur fuga
+        architecto laborum minus praesentium mollitia! Consequatur velit ut, a labore tenetur omnis maiores quia placeat
+        repellat aut soluta quibusdam ad eum unde veritatis animi. Inventore?
+      </p>
+    </div>
+
+    <div class="container">
+      <h2>System</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis sit nemo quidem voluptatibus possimus vero
+        repellat. Quas perspiciatis amet tenetur dicta laboriosam sed corporis voluptates nihil fugit necessitatibus
+        ipsum delectus nam, officia quia deleniti! Expedita tempore beatae perferendis eos dolores omnis accusamus
+        asperiores similique hic a deleniti repudiandae quasi quibusdam doloremque ipsum nisi, modi aliquam sequi
+        distinctio atque rem incidunt. Accusamus voluptate officiis facilis eum adipisci, cum quos distinctio cupiditate
+        ipsa, illum id omnis cumque. Magnam, tempora sapiente consectetur fuga laudantium, rerum voluptatum possimus nam
+        a vero ea! Exercitationem et quia nihil cum, optio sit inventore expedita suscipit perspiciatis deleniti!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde debitis autem fuga expedita, suscipit voluptatem
+        soluta atque sunt maiores facilis earum? Dignissimos sequi nam sunt voluptatibus nemo eum magni dolor illo nobis
+        porro, explicabo quae? Minima nulla cum adipisci dolores natus a blanditiis iusto, corporis quasi excepturi
+        facere officiis culpa aliquid mollitia tenetur velit asperiores nihil quas deleniti magni hic. Commodi cumque
+        ullam exercitationem tempora, vero molestiae ratione sequi eveniet corporis autem temporibus repudiandae neque
+        nostrum magni enim. Illum nobis dolores reiciendis, facere doloremque cupiditate itaque minima perspiciatis
+        placeat? A adipisci voluptatum ipsam delectus cum odio nobis. Eligendi ea asperiores commodi suscipit aspernatur
+        beatae ducimus enim quas atque, delectus nostrum eveniet tenetur cupiditate odio eos est eaque, iusto
+        accusantium vero?
+      </p>
+    </div>
+
+  </main>
+
+
+  <script src="vendor/fontawesome/all.min.js"></script>
+  <script src="vendor/js/script.js" defer></script>
+</body>
+
+</html>
